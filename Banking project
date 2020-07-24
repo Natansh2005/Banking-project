@@ -1,0 +1,75 @@
+#include<stdio.h>                                                              
+                                                                                
+void main()                                                                     
+{                                                                               
+    int balance=0, deposit, withdraw;                                              
+    float ci;                                                                      
+    char op;                                                                       
+                                                                                
+ while(1)                                                                       
+ {                                                                              
+        printf("\nBanking System");                                                   
+        printf("\n................");  
+        printf("\nC -> Create an account.");                                              
+        printf("\nD ->Deposit");                                                     
+        printf("\nW ->Withdraw");                                                    
+        printf("\nB ->Balance");                                                     
+        printf("\nI ->Interest");                                                    
+        printf("\nQ ->Quit");                                                        
+        printf("\nEnter operation: ");                                                
+        scanf(" %c", &op);                                                            
+  switch(op)                                                                    
+  {                         
+    int age,name;
+        case 'C':
+                printf("Enter your age: ");
+                scanf("%d", &age);
+        
+                printf("Enter your name: ");
+                scanf("%d", &name);
+                
+            int number;
+                printf("Input your phone number");
+                scanf("%d", &number);
+                if(number==10)
+                {
+                    printf("valid number");
+                }
+                else
+                {
+                    printf("Try again");
+                }
+                break;
+                
+        case 'D':                                                                    
+            printf("\nEnter deposit amount: ");                                        
+            scanf("%d", &deposit); 
+            balance += deposit;                                                               
+            break;                   
+
+        case 'W':                                                                    
+            printf("\nEnter withdraw amount: ");                                       
+            scanf("%d", &withdraw);                                                    
+            balance += withdraw;                                                       
+            break;         
+
+        case 'B':                                                                    
+            printf("Balance: %d", balance);                                            
+            break;       
+
+        case 'I':                                                                    
+            ci = (float)balance*4/100;                                                 
+            balance += ci;                                                             
+            printf("\nInterest: %f", ci);                                              
+            break;           
+
+        case 'Q':                                                                    
+            return;    
+
+        default:                                                                     
+            printf("Invalid Operation!");                                              
+  }                                                                             
+ }                                                                              
+} 
+
+
